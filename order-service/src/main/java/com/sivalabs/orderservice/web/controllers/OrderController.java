@@ -19,6 +19,7 @@ public class OrderController {
 
     @PostMapping("/api/orders")
     public Order createOrder(@RequestBody Order order) {
+    	System.out.println("Test");
         return repo.save(order);
     }
 
